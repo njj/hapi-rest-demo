@@ -1,4 +1,5 @@
 var Hapi = require('hapi');
+var models = require('./models');
 
 // create the server
 var server = new Hapi.Server();
@@ -12,6 +13,8 @@ server.route({
   }
 });
 
-server.start(function() {
-  console.log('Running on 3000');
+models.sequelize.sync().then(function() {
+  server.start(function() {
+    console.log('Running on 3000');
+  });
 });
