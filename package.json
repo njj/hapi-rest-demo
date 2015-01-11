@@ -1,0 +1,18 @@
+{
+  "name": "hapi-rest-demo",
+  "version": "0.0.0",
+  "description": "A simple REST API demo using hapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:niix/hapi-rest-demo.git"
+  },
+  "author": "Nick Justice",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^8.1.0"
+  }
+}
