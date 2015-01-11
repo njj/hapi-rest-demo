@@ -4,7 +4,8 @@
   "description": "A simple REST API demo using hapi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,14 @@
   "author": "Nick Justice",
   "license": "MIT",
   "dependencies": {
-    "hapi": "^8.1.0"
+    "hapi": "^8.1.0",
+    "joi": "^5.1.0",
+    "sequelize": "^2.0.0-rc7",
+    "sqlite3": "^3.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-nodemon": "^1.0.5",
+    "sequelize-cli": "^1.0.3"
   }
 }
